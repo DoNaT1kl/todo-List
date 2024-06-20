@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+#app {
+  max-width: 1000px;
+  max-height: 800px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 99%;
+  height: 99%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+  
+#task-form {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+  
+#task-input {
+  text-align: center;
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 7px;
+}
+
+button {
+  background-color: aqua;
+  border: 1px solid black;
+}
+  
+#task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+li {
+  margin: 1%;
+}
+
+li button {
+  margin-left: 5px;
+  padding: 3px;
+}
